@@ -15,7 +15,7 @@ OauthTestApp::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
@@ -35,3 +35,7 @@ OauthTestApp::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+DOORKEEPER_APP_ID = "784a50c7e91f5c96f8c4d6a57d3d5652e63fc4b59fa9dccec80f2991244f1f88"
+DOORKEEPER_APP_SECRET = "2ac62a82080803c3a45d0e22b89821dd071ab294ebd0c50fa481080ec01cc2ba"
+DOORKEEPER_APP_URL = "http://localhost:5000"
