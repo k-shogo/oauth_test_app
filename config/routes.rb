@@ -1,4 +1,6 @@
 OauthTestApp::Application.routes.draw do
+  resources :blogs
+
   root :to => 'home#index'
 
   # match 'explore/:api' => 'api#explore', :as => :explore_api
